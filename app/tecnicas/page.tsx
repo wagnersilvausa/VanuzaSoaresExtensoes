@@ -78,14 +78,14 @@ export default function Tecnicas() {
 
       {/* Hero */}
       <section
-        className="relative py-12 sm:py-16 overflow-hidden"
+        className="relative min-h-[60vh] flex items-end pb-16 overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #1a0f14 0%, #2a1a20 100%)' }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ background: 'radial-gradient(ellipse at 30% 60%, rgba(152,73,92,0.25) 0%, transparent 60%)' }}
         />
-        <div className="relative max-w-4xl mx-auto px-5 sm:px-8 text-center">
+        <div className="relative max-w-4xl mx-auto px-5 sm:px-8 text-center w-full">
           <div className="flex items-center justify-center gap-3 mb-6">
             <div className="h-px w-8" style={{ background: 'var(--gold)' }} />
             <p className="text-xs font-bold uppercase tracking-[0.2em]" style={{ color: 'var(--gold)' }}>
