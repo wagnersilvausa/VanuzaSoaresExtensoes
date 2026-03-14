@@ -13,7 +13,7 @@ const timeline = [
   { year: '2020', title: 'Superação', desc: 'A pandemia trouxe desafios. Mas a constância e a fé mantiveram o negócio e o propósito de pé.' },
   { year: '2021/22', title: 'Renascimento', desc: 'De volta ao ritmo pleno. Novos clientes, novas técnicas, crescimento orgânico nas redes sociais.' },
   { year: '2024-25', title: 'Expansão', desc: 'Novas turmas de cursos, mais clientes atendidas e reconhecimento crescente da marca nas redes sociais.' },
-  { year: '2026', title: 'Hoje', desc: '9 anos, 11 mil seguidoras, 5 mil clientes transformadas. Uma marca sólida com história real.' },
+  { year: '2026', title: 'Hoje', desc: '9 anos, 11 mil seguidoras, diversas clientes transformadas. Uma marca sólida com história real.' },
 ];
 
 export default function NossaHistoria() {
@@ -87,7 +87,7 @@ export default function NossaHistoria() {
               {[
                 { v: '9', u: 'anos', desc: 'De experiência profissional e aperfeiçoamento constante' },
                 { v: '11K', u: 'seguidoras', desc: 'Comunidade que cresce organicamente com confiança' },
-                { v: '5K+', u: 'clientes', desc: 'Transformações reais ao longo de toda a trajetória' },
+                { v: 'Diversas', u: 'clientes', desc: 'Transformações reais ao longo de toda a trajetória' },
                 { v: '3', u: 'técnicas', desc: 'Dominadas com maestria: Microlink, Fita e Ponto' },
               ].map((s, i) => (
                 <div
