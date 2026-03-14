@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -13,6 +14,8 @@ const images = [
 ];
 
 export function ResultsPreview() {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
+
   return (
     <section
       className="py-12 sm:py-16 relative overflow-hidden"
@@ -60,8 +63,9 @@ export function ResultsPreview() {
           {images.map((img, i) => (
             <div
               key={i}
-              className="relative overflow-hidden rounded-xl group"
+              className="relative overflow-hidden rounded-xl group cursor-pointer"
               style={{ aspectRatio: '1/1' }}
+              onClick={() => setSelectedImage(i)}
             >
               <Image
                 src={img.src}
@@ -85,6 +89,62 @@ export function ResultsPreview() {
             </div>
           ))}
         </div>
+
+        {/* Modal Lightbox */}
+        {selectedImage !== null && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center p-4"
+            style={{ background: 'rgba(0,0,0,0.9)' }}
+            onClick={() => setSelectedImage(null)}
+          >
+            <div
+              className="relative w-full max-w-4xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image
+                src={images[selectedImage].src}
+                alt={images[selectedImage].alt}
+                width={1200}
+                height={1200}
+                className="w-full h-auto rounded-xl"
+                priority
+              />
+              {/* Close button */}
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors"
+                aria-label="Fechar"
+              >
+                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              {/* Navigation */}
+              {selectedImage > 0 && (
+                <button
+                  onClick={() => setSelectedImage(selectedImage - 1)}
+                  className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-16 text-white hover:text-gray-300 transition-colors"
+                  aria-label="Anterior"
+                >
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+              )}
+              {selectedImage < images.length - 1 && (
+                <button
+                  onClick={() => setSelectedImage(selectedImage + 1)}
+                  className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-16 text-white hover:text-gray-300 transition-colors"
+                  aria-label="Próxima"
+                >
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              )}
+            </div>
+          </div>
+        )}
 
         {/* CTA */}
         <div className="text-center mt-8 flex flex-col sm:flex-row gap-4 justify-center">
