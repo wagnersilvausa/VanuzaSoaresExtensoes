@@ -22,32 +22,31 @@ export default function NossaHistoria() {
 
       {/* Hero */}
       <section
-        className="relative min-h-[60vh] flex items-end pb-16 overflow-hidden"
+        className="relative min-h-[50vh] sm:min-h-[60vh] flex items-start overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #1a0f14 0%, #2a1a20 100%)' }}
       >
         <div
           className="absolute inset-0 pointer-events-none"
           style={{ background: 'radial-gradient(ellipse at 70% 40%, rgba(152,73,92,0.3) 0%, transparent 60%)' }}
         />
-        <div className="relative max-w-7xl mx-auto px-5 sm:px-8 w-full">
-          <div className="max-w-2xl">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="h-px w-8" style={{ background: 'var(--gold)' }} />
-              <p className="text-xs font-bold uppercase tracking-[0.2em]" style={{ color: 'var(--gold)' }}>
-                Nossa Trajetória
-              </p>
-            </div>
-            <h1
-              className="font-extrabold text-white leading-tight mb-4"
-              style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', letterSpacing: '-0.03em' }}
-            >
-              9 anos construindo com propósito
-            </h1>
-            <p className="text-white/60 text-lg max-w-lg">
-              Uma história real de esforço, transformação e a descoberta de que trabalhar com mega hair
-              era muito mais que um negócio, era uma missão.
+        <div className="relative max-w-4xl mx-auto px-5 sm:px-8 text-center w-full pt-28 sm:pt-32 pb-12 sm:pb-16">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <div className="h-px w-8" style={{ background: 'var(--gold)' }} />
+            <p className="text-xs font-bold uppercase tracking-[0.2em]" style={{ color: 'var(--gold)' }}>
+              Nossa Trajetória
             </p>
+            <div className="h-px w-8" style={{ background: 'var(--gold)' }} />
           </div>
+          <h1
+            className="font-extrabold text-white leading-tight mb-4"
+            style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', letterSpacing: '-0.03em' }}
+          >
+            Nossa História
+          </h1>
+          <p className="text-white/60 text-lg max-w-lg mx-auto">
+            Uma história real de esforço, transformação e a descoberta de que trabalhar com mega hair
+            era muito mais que um negócio, era uma missão.
+          </p>
         </div>
       </section>
 
