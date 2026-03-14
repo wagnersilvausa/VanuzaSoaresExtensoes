@@ -1,0 +1,219 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Custom Fonts ─────────────────────────────────────────────── */
+@font-face {
+  font-family: 'Angler';
+  src: url('/fonts/angler-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Barcelony';
+  src: url('/fonts/barcelony.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── CSS Variables ─────────────────────────────────────────────── */
+:root {
+  --primary:       #98495C;
+  --primary-deep:  #5a2e3e;
+  --secondary:     #B37E85;
+  --tertiary:      #715B4B;
+  --dark:          #1a0f14;
+  --charcoal:      #2a1a20;
+  --gold:          #c9a961;
+  --gold-light:    #e4cc94;
+  --cream:         #fdf8f2;
+  --light:         #f8f3f5;
+  --blush:         #f5e8eb;
+}
+
+/* ─── Base Reset ────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cream);
+  color: var(--dark);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Typography ────────────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* ─── Selection ─────────────────────────────────────────────────── */
+::selection      { background: var(--primary); color: #fff; }
+::-moz-selection { background: var(--primary); color: #fff; }
+
+/* ─── Scrollbar ─────────────────────────────────────────────────── */
+::-webkit-scrollbar              { width: 8px; }
+::-webkit-scrollbar-track        { background: var(--dark); }
+::-webkit-scrollbar-thumb        { background: var(--primary); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover  { background: var(--secondary); }
+
+/* ─── Utility ───────────────────────────────────────────────────── */
+img { max-width: 100%; height: auto; display: block; }
+
+/* ─── Text Gradient ─────────────────────────────────────────────── */
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-brand {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Gold Accent Line ──────────────────────────────────────────── */
+.accent-line {
+  display: inline-block;
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  border-radius: 2px;
+}
+
+/* ─── Card Premium ──────────────────────────────────────────────── */
+.card-premium {
+  background: #fff;
+  border: 1px solid rgba(152,73,92,0.1);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+  position: relative;
+  overflow: hidden;
+}
+.card-premium::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(152,73,92,0.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+.card-premium:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(152,73,92,0.15);
+  border-color: rgba(152,73,92,0.25);
+}
+
+/* ─── Dark Card ─────────────────────────────────────────────────── */
+.card-dark {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.35s ease;
+  backdrop-filter: blur(10px);
+}
+.card-dark:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: rgba(201,169,97,0.25);
+  transform: translateY(-3px);
+}
+
+/* ─── Section Divider ───────────────────────────────────────────── */
+.divider-gold {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.divider-gold::before,
+.divider-gold::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(201,169,97,0.4), transparent);
+}
+
+/* ─── Glow effects ──────────────────────────────────────────────── */
+.glow-primary {
+  box-shadow: 0 0 40px rgba(152,73,92,0.2);
+}
+
+/* ─── Number Highlight ──────────────────────────────────────────── */
+.stat-number {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+/* ─── Overlay helpers ───────────────────────────────────────────── */
+.overlay-dark {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(26,15,20,0.97) 0%,
+    rgba(26,15,20,0.85) 45%,
+    rgba(26,15,20,0.4)  70%,
+    rgba(26,15,20,0.15) 100%
+  );
+  z-index: 1;
+}
+
+/* ─── Animations ────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(32px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-fade-up { animation: fadeUp 0.7s ease-out both; }
+.animate-fade-in { animation: fadeIn 0.5s ease-out both; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* ─── Form Dark Override ─────────────────────────────────────────── */
+input, textarea, select {
+  color-scheme: dark;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #2a1a20 inset !important;
+  -webkit-text-fill-color: #fff !important;
+  caret-color: #fff;
+}
+
+/* ─── Reduced Motion ─────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
