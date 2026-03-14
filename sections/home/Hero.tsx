@@ -130,9 +130,9 @@ export function Hero() {
             className="flex flex-wrap gap-8 pt-8 border-t border-white/10 animate-fade-up delay-500"
           >
             {[
-              { value: '8', label: 'Anos de Experiência' },
+              { value: '9', label: 'Anos de Experiência' },
               { value: '11K', label: 'Seguidores' },
-              { value: '5K+', label: 'Clientes Atendidas' },
+              { value: 'Alta', label: 'Taxa de Satisfação' },
             ].map((m) => (
               <div key={m.label}>
                 <p className="font-extrabold text-3xl leading-none" style={{ color: 'var(--gold)' }}>

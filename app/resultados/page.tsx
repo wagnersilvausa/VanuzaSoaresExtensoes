@@ -55,9 +55,9 @@ export default function Resultados() {
       <section style={{ background: 'var(--primary)' }}>
         <div className="max-w-4xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-3 divide-x divide-white/20">
           {[
-            { value: '5K+', label: 'Clientes transformadas' },
+            { value: 'Diversas', label: 'Clientes transformadas' },
             { value: '8', label: 'Anos de experiência' },
-            { value: '98%', label: 'Taxa de satisfação' },
+            { value: 'Alta', label: 'Taxa de satisfação' },
           ].map((s) => (
             <div key={s.label} className="text-center px-2 sm:px-4">
               <p className="text-xl sm:text-2xl md:text-3xl font-extrabold text-white">{s.value}</p>

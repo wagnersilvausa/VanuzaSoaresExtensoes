@@ -8,7 +8,7 @@ const items = [
       </svg>
     ),
     title: 'Especialista Certificada',
-    desc: '8 anos de dedicação exclusiva ao mega hair profissional com aperfeiçoamento contínuo.',
+    desc: '9 anos de dedicação exclusiva ao mega hair profissional com aperfeiçoamento contínuo.',
   },
   {
     icon: (

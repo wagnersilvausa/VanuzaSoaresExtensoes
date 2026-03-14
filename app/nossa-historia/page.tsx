@@ -13,7 +13,7 @@ const timeline = [
   { year: '2020', title: 'Superação', desc: 'A pandemia trouxe desafios. Mas a constância e a fé mantiveram o negócio e o propósito de pé.' },
   { year: '2021/22', title: 'Renascimento', desc: 'De volta ao ritmo pleno. Novos clientes, novas técnicas, crescimento orgânico nas redes sociais.' },
   { year: '2024-25', title: 'Expansão', desc: 'Novas turmas de cursos, mais clientes atendidas e reconhecimento crescente da marca nas redes sociais.' },
-  { year: '2026', title: 'Hoje', desc: '8 anos, 11 mil seguidoras, 5 mil clientes transformadas. Uma marca sólida com história real.' },
+  { year: '2026', title: 'Hoje', desc: '9 anos, 11 mil seguidoras, 5 mil clientes transformadas. Uma marca sólida com história real.' },
 ];
 
 export default function NossaHistoria() {
@@ -41,7 +41,7 @@ export default function NossaHistoria() {
               className="font-extrabold text-white leading-tight mb-4"
               style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', letterSpacing: '-0.03em' }}
             >
-              8 anos construindo com propósito
+              9 anos construindo com propósito
             </h1>
             <p className="text-white/60 text-lg max-w-lg">
               Uma história real de esforço, transformação e a descoberta de que trabalhar com mega hair
@@ -85,7 +85,7 @@ export default function NossaHistoria() {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-4">
               {[
-                { v: '8', u: 'anos', desc: 'De experiência profissional e aperfeiçoamento constante' },
+                { v: '9', u: 'anos', desc: 'De experiência profissional e aperfeiçoamento constante' },
                 { v: '11K', u: 'seguidoras', desc: 'Comunidade que cresce organicamente com confiança' },
                 { v: '5K+', u: 'clientes', desc: 'Transformações reais ao longo de toda a trajetória' },
                 { v: '3', u: 'técnicas', desc: 'Dominadas com maestria: Microlink, Fita e Ponto' },

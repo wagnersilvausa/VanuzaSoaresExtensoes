@@ -44,7 +44,7 @@ export function IntroStory() {
                 através da autoestima.
               </p>
               <p>
-                São 8 anos de dedicação, esforço constante e perseverança, atravessando mudanças de espaço,
+                São 9 anos de dedicação, esforço constante e perseverança, atravessando mudanças de espaço,
                 desafios, pandemia, sempre com a mesma entrega de qualidade para cada cliente.
               </p>
               <p>
@@ -71,22 +71,23 @@ export function IntroStory() {
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-1 gap-4">
             {[
               {
-                value: '8',
-                suffix: ' anos',
-                label: 'de experiência profissional',
+                value: '+9',
+                suffix: '',
+                label: 'anos de mercado',
                 sub: 'Dedicação constante e aperfeiçoamento contínuo',
               },
               {
-                value: '11K',
+                value: '3',
                 suffix: '',
-                label: 'seguidoras',
-                sub: 'Comunidade que cresce e confia',
+                label: 'técnicas certificadas',
+                sub: 'Microlink, Fita Adesiva e Ponto Americano',
               },
               {
-                value: '5K+',
+                value: '100%',
                 suffix: '',
-                label: 'clientes transformadas',
-                sub: 'Autoestima elevada em cada atendimento',
+                label: 'atendimento personalizado',
+                sub: 'Cada cliente tratada de forma única e exclusiva',
+                small: true,
               },
             ].map((s) => (
               <div
@@ -98,7 +99,7 @@ export function IntroStory() {
                 }}
               >
                 <div className="flex-shrink-0">
-                  <span className="stat-number">{s.value}</span>
+                  <span className="stat-number" style={s.small ? { fontSize: 'clamp(1.5rem, 3vw, 2.2rem)' } : {}}>{s.value}</span>
                   <span
                     className="text-lg font-bold"
                     style={{ color: 'var(--gold)' }}

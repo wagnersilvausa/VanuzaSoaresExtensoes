@@ -11,8 +11,8 @@ const techniques = [
     num: '01',
     name: 'Microlink',
     slogan: 'Discreta. Natural. Duradoura.',
-    duration: '2 a 3h',
-    durability: '6 a 8 semanas',
+    duration: '2 a 6h',
+    durability: '2 a 3 meses',
     desc: 'A técnica Microlink usa pequenas anilhas metálicas para fixar as mechas fio a fio, sem cola e sem calor. O resultado é extremamente natural, discreto e seguro para os fios originais.',
     advantages: [
       'Sem cola ou calor nos cabelos',
@@ -26,7 +26,7 @@ const techniques = [
       'Evite água muito quente',
       'Penteie com cuidado da ponta para a raiz',
       'Durma com cabelo preso',
-      'Manutenção a cada 6 a 8 semanas',
+      'Manutenção a cada 2 a 3 meses',
     ],
   },
   {
@@ -34,7 +34,7 @@ const techniques = [
     name: 'Fita Adesiva',
     slogan: 'Rápida. Leve. Confortável.',
     duration: '1 a 2h',
-    durability: '4 a 6 semanas',
+    durability: '1 a 2 meses',
     desc: 'A fita adesiva é a técnica mais rápida e confortável do mega hair. Utiliza adesivo de alta qualidade para fixar as mechas em sanduíche, proporcionando volume e comprimento com leveza.',
     advantages: [
       'Aplicação rápida e sem dor',
@@ -48,15 +48,15 @@ const techniques = [
       'Evite cremes oleosos na raiz',
       'Seque bem após lavar',
       'Evite sauna e piscina com frequência',
-      'Reposicione a cada 4 a 5 semanas',
+      'Reposicione a cada 1 a 2 meses',
     ],
   },
   {
     num: '03',
     name: 'Ponto Americano',
     slogan: 'Clássica. Forte. Impactante.',
-    duration: '3 a 4h',
-    durability: '8 a 10 semanas',
+    duration: '1 a 4h',
+    durability: '2 a 3 meses',
     desc: 'O Ponto Americano é a técnica mais clássica e durável do mega hair. Usa queratina ou cola especial para fixar mechas que oferecem grande volume e comprimento com excelente fixação.',
     advantages: [
       'Maior durabilidade entre as técnicas',
@@ -70,7 +70,7 @@ const techniques = [
       'Evite tranças ou rabos apertados',
       'Seque com cuidado nas anilhas',
       'Use produtos sem óleo na raiz',
-      'Manutenção a cada 8 a 10 semanas',
+      'Manutenção a cada 2 a 3 meses',
     ],
   },
 ];

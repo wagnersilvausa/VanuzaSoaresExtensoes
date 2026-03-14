@@ -61,7 +61,7 @@ export default function Cursos() {
             Aprenda com quem vive isso
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.6)' }} className="text-lg max-w-xl mx-auto">
-            8 anos de experiência condensados em cursos práticos, objetivos e com resultado real
+            9 anos de experiência condensados em cursos práticos, objetivos e com resultado real
             para o seu negócio.
           </p>
         </div>
