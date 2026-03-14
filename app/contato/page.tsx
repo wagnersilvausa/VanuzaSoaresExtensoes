@@ -43,7 +43,7 @@ export default function Contato() {
 
       {/* Form section */}
       <section
-        className="pt-10 sm:pt-14 pb-20 sm:pb-28"
+        className="py-12 sm:py-16"
         style={{ background: 'linear-gradient(180deg, #2a1a20 0%, #1a0f14 100%)' }}
       >
         <div className="max-w-2xl mx-auto px-5 sm:px-8">
@@ -71,7 +71,7 @@ export default function Contato() {
 
       {/* Contact cards */}
       <section
-        className="py-20 sm:py-28"
+        className="py-12 sm:py-16"
         style={{ background: 'linear-gradient(180deg, #1a0f14 0%, #2a1a20 100%)' }}
       >
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
@@ -151,7 +151,7 @@ export default function Contato() {
 
       {/* Info section */}
       <section
-        className="py-20 sm:py-28"
+        className="py-12 sm:py-16"
         style={{ background: 'linear-gradient(180deg, #2a1a20, #1a0f14)' }}
       >
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
@@ -263,7 +263,7 @@ export default function Contato() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-brand-primary">
+      <section className="py-12 bg-brand-primary">
         <div className="max-w-2xl mx-auto px-5 sm:px-8 text-center">
           <h2 className="font-extrabold text-white text-3xl sm:text-4xl mb-4">
             Pronta para transformar seu visual?

@@ -78,7 +78,7 @@ export default function Tecnicas() {
 
       {/* Hero */}
       <section
-        className="relative min-h-[50vh] sm:min-h-[60vh] flex items-start overflow-hidden"
+        className="relative flex items-start overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #1a0f14 0%, #2a1a20 100%)' }}
       >
         <div
@@ -108,10 +108,10 @@ export default function Tecnicas() {
 
       {/* Techniques */}
       <section
-        className="py-20 sm:py-28"
+        className="py-12 sm:py-16"
         style={{ background: 'linear-gradient(180deg, #2a1a20 0%, #1a0f14 100%)' }}
       >
-        <div className="max-w-5xl mx-auto px-5 sm:px-8 space-y-16 sm:space-y-24">
+        <div className="max-w-5xl mx-auto px-5 sm:px-8 space-y-10 sm:space-y-14">
           {techniques.map((t, i) => (
             <div
               key={i}
@@ -207,7 +207,7 @@ export default function Tecnicas() {
 
       {/* Evaluation section */}
       <section
-        className="py-20 sm:py-28"
+        className="py-12 sm:py-16"
         style={{ background: 'linear-gradient(180deg, #1a0f14, #2a1a20)' }}
       >
         <div className="max-w-4xl mx-auto px-5 sm:px-8">
@@ -262,7 +262,7 @@ export default function Tecnicas() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-brand-primary">
+      <section className="py-12 bg-brand-primary">
         <div className="max-w-2xl mx-auto px-5 sm:px-8 text-center">
           <h2 className="font-extrabold text-white text-3xl sm:text-4xl mb-4">
             Qual técnica é a sua?
