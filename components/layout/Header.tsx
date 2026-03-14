@@ -19,13 +19,13 @@ export function Header() {
       className={`fixed w-full top-0 z-50 transition-all duration-500 ${
         scrolled
           ? 'bg-brand-dark/95 backdrop-blur-xl border-b border-white/5 py-3'
-          : 'bg-transparent py-5'
+          : 'bg-transparent py-3 sm:py-5'
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
+      <nav className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-4">
 
         {/* Logo */}
-        <Link href="/" className="flex flex-col items-center group">
+        <Link href="/" className="flex flex-col items-start lg:items-center group flex-1 lg:flex-none">
           <span className="text-lg font-extrabold tracking-tight text-white leading-none">
             Vanuza Soares
           </span>
@@ -53,7 +53,7 @@ export function Header() {
         {/* Mobile toggle */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 group"
+          className="lg:hidden w-10 h-10 flex flex-col items-center justify-center gap-1.5 group flex-shrink-0"
           aria-label="Menu"
         >
           {isOpen ? (
