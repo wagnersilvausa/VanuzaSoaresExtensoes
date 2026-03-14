@@ -97,7 +97,7 @@ export function Hero() {
             className="text-white/75 font-medium leading-relaxed mb-10 animate-fade-up delay-200"
             style={{ fontSize: 'clamp(1rem, 2vw, 1.25rem)', maxWidth: '520px' }}
           >
-            Técnicas avançadas, acabamento natural e atendimento profissional para realçar sua beleza e sua autoestima.
+            Técnicas avançadas, acabamento natural e atendimento profissional para valorizar sua beleza, sua confiança e sua autoestima.
           </p>
 
           {/* CTAs */}

@@ -36,8 +36,7 @@ export default function Contato() {
             Vamos conversar
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.6)' }} className="text-lg max-w-lg mx-auto">
-            Seja para agendar, tirar dúvidas ou conhecer mais sobre nossos serviços e cursos,
-            estamos aqui.
+            Entre em contato para agendar seu atendimento, tirar dúvidas ou saber mais sobre os cursos. Será um prazer te atender.
           </p>
         </div>
       </section>
@@ -115,7 +114,7 @@ export default function Contato() {
                 className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-sm transition-all hover:scale-105"
                 style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
               >
-                Abrir WhatsApp
+                Chamar no WhatsApp
               </a>
             </div>
 
@@ -134,8 +133,7 @@ export default function Contato() {
               </div>
               <h3 className="text-2xl font-extrabold text-white mb-2">Instagram</h3>
               <p className="text-sm leading-relaxed mb-8 flex-grow" style={{ color: 'rgba(255,255,255,0.6)' }}>
-                Acompanhe os resultados, stories do dia a dia e novidades em primeira mão.
-                Mais de 11 mil seguidoras já nos acompanham.
+                Acompanhe resultados, novidades e conteúdos no Instagram oficial.
               </p>
               <a
                 href={siteConfig.brand.instagramUrl}

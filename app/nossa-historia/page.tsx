@@ -67,17 +67,17 @@ export default function NossaHistoria() {
               </h2>
               <div className="space-y-5 leading-relaxed text-base sm:text-lg" style={{ color: 'rgba(255,255,255,0.65)' }}>
                 <p>
-                  Tudo começou de uma forma simples: a necessidade de complementar a renda. Mas o que parecia
-                  uma solução temporária revelou um talento genuíno e uma vocação real.
+                  A história da Vanuza Soares Extensões Mega Hair foi construída com trabalho, constância
+                  e muita dedicação. O que começou como uma oportunidade se transformou em profissão,
+                  propósito e trajetória sólida no mercado da beleza.
                 </p>
                 <p>
-                  Ao entrar no universo do mega hair, Vanuza descobriu que transformar cabelos era, na verdade,
-                  transformar autoestima. Cada cliente que saía com o resultado no espelho era uma confirmação:
-                  esse era o caminho.
+                  Ao longo de 9 anos, cada etapa trouxe aprendizado, evolução técnica e mais conexão com
+                  mulheres que buscavam não apenas alongar os fios, mas recuperar confiança, presença e autoestima.
                 </p>
                 <p>
-                  Com esforço, persistência e constância, o que era renda extra virou profissão principal.
-                  A marca foi crescendo, os clientes voltando, e os resultados falando por si só.
+                  Hoje, a marca representa experiência, cuidado e transformação real — com um atendimento
+                  que une técnica, sensibilidade e resultado natural.
                 </p>
               </div>
             </div>

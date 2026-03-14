@@ -2,7 +2,7 @@ export const siteConfig = {
   brand: {
     name: 'Vanuza Soares Extensões Mega Hair',
     shortName: 'Vanuza Soares',
-    description: 'Especialista em Mega Hair com 8 anos de experiência. Transformação de autoestima através de técnicas profissionais.',
+    description: 'Especialista em Mega Hair com 9 anos de experiência. Atendimento profissional, técnicas avançadas e resultado natural.',
     instagram: '@vanuzasoaresextensoes',
     instagramUrl: 'https://instagram.com/vanuzasoaresextensoes',
     youtubeUrl: 'https://www.youtube.com/@vanuzasoaresextensoes',
@@ -10,9 +10,9 @@ export const siteConfig = {
     whatsapp: 'https://wa.me/5531992560137',
   },
   stats: {
-    yearsExperience: 8,
-    followers: '11k',
-    clients: '5000+',
+    yearsExperience: 9,
+    followers: '11mil',
+    clients: 'diversas',
   },
   pages: [
     { name: 'Início', path: '/' },
@@ -27,7 +27,7 @@ export const siteConfig = {
 export const metadata = {
   home: {
     title: 'Vanuza Soares Extensões Mega Hair | Especialista em Mega Hair',
-    description: 'Transformação de autoestima com mega hair profissional. 8 anos de experiência, 11k seguidores. Técnicas: Microlink, Fita Adesiva, Ponto Americano.',
+    description: 'Mega hair profissional com 9 anos de experiência. Técnicas avançadas, acabamento natural e alta taxa de satisfação. Microlink, Fita Adesiva, Ponto Americano.',
   },
   history: {
     title: 'Nossa História | Vanuza Soares Extensões Mega Hair',

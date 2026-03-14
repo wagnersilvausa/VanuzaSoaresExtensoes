@@ -32,8 +32,7 @@ export function Footer() {
               </p>
             </div>
             <p className="text-white/45 text-sm leading-relaxed max-w-xs mb-6">
-              Especialista em mega hair com 9 anos de experiência. Transformação de autoestima
-              através de técnicas profissionais e materiais premium.
+              Beleza, técnica e transformação com atendimento profissional.
             </p>
             {/* Social Links */}
             <div className="flex flex-wrap gap-3">

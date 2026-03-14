@@ -61,8 +61,7 @@ export default function Cursos() {
             Aprenda com quem vive isso
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.6)' }} className="text-lg max-w-xl mx-auto">
-            9 anos de experiência condensados em cursos práticos, objetivos e com resultado real
-            para o seu negócio.
+            Aprenda técnicas de mega hair com quem construiu experiência real no mercado. Uma formação pensada para quem deseja atender com mais segurança e desenvolver um trabalho profissional.
           </p>
         </div>
       </section>
@@ -71,8 +70,8 @@ export default function Cursos() {
       <section style={{ background: 'var(--primary)' }}>
         <div className="max-w-4xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-3 divide-x divide-white/20">
           {[
-            { v: '8', label: 'Anos ensinando' },
-            { v: '5K+', label: 'Alunas formadas' },
+            { v: '9', label: 'Anos ensinando' },
+            { v: 'Diversas', label: 'Alunas formadas' },
             { v: '3', label: 'Técnicas dominadas' },
           ].map((s) => (
             <div key={s.label} className="text-center px-2 sm:px-4">
@@ -248,8 +247,7 @@ export default function Cursos() {
             Pronta para começar?
           </h2>
           <p className="text-white/80 mb-8">
-            Fale conosco para saber sobre datas, turmas, investimento e metodologia.
-            Respondemos com atenção!
+            Fale pelo WhatsApp para saber sobre datas, turmas e investimento. Respondemos com atenção.
           </p>
           <a
             href={siteConfig.brand.whatsapp}
@@ -258,7 +256,7 @@ export default function Cursos() {
             className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm transition-all hover:scale-105"
             style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
           >
-            Solicitar informações sobre cursos
+            Falar sobre cursos no WhatsApp
           </a>
         </div>
       </section>

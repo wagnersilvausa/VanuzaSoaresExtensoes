@@ -46,7 +46,7 @@ export default function Resultados() {
             Galeria de Transformações
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.6)' }} className="text-lg max-w-xl mx-auto">
-            Cada foto é a história real de uma mulher que ganhou confiança, autoestima e beleza.
+            Resultados reais que valorizam cada detalhe. Uma galeria de transformações feitas com técnica, cuidado e acabamento natural.
           </p>
         </div>
       </section>
@@ -56,7 +56,7 @@ export default function Resultados() {
         <div className="max-w-4xl mx-auto px-5 sm:px-8 py-6 grid grid-cols-3 divide-x divide-white/20">
           {[
             { value: 'Diversas', label: 'Clientes transformadas' },
-            { value: '8', label: 'Anos de experiência' },
+            { value: '9', label: 'Anos de experiência' },
             { value: 'Alta', label: 'Taxa de satisfação' },
           ].map((s) => (
             <div key={s.label} className="text-center px-2 sm:px-4">
@@ -121,10 +121,10 @@ export default function Resultados() {
             style={{ background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.08)' }}
           >
             <p className="font-extrabold text-white text-xl mb-2">
-              Mais de 5 mil transformações no Instagram
+              Transformações reais no Instagram
             </p>
             <p className="text-sm mb-6" style={{ color: 'rgba(255,255,255,0.5)' }}>
-              Acompanhe os trabalhos diários, stories exclusivos e muito mais em {siteConfig.brand.instagram}
+              Acompanhe os trabalhos diários, novidades e resultados em primeira mão em {siteConfig.brand.instagram}
             </p>
             <a
               href={siteConfig.brand.instagramUrl}
@@ -163,9 +163,9 @@ export default function Resultados() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { quote: 'Nunca imaginei que meu cabelo pudesse ficar assim. Sou outra pessoa depois do mega hair da Vanuza!', stars: 5 },
-              { quote: 'O cuidado e profissionalismo são incomparáveis. Minha terceira vez e sempre saio encantada.', stars: 5 },
-              { quote: 'Cabelo fino, mas com o mega hair dela ficou incrível, completamente natural e lindo.', stars: 5 },
+              { quote: 'Meu cabelo ficou incrível. O resultado é muito natural, parece que sempre foi assim. Super indico!', stars: 5 },
+              { quote: 'Terceira vez com a Vanuza. O cuidado com cada detalhe faz toda a diferença. Sempre saio satisfeita.', stars: 5 },
+              { quote: 'Cabelo fino e com o mega hair ficou com um volume lindo. Atendimento atencioso do início ao fim.', stars: 5 },
             ].map((t, i) => (
               <div
                 key={i}

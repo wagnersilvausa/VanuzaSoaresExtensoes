@@ -13,7 +13,7 @@ const techniques = [
     slogan: 'Discreta. Natural. Duradoura.',
     duration: '2 a 6h',
     durability: '2 a 3 meses',
-    desc: 'A técnica Microlink usa pequenas anilhas metálicas para fixar as mechas fio a fio, sem cola e sem calor. O resultado é extremamente natural, discreto e seguro para os fios originais.',
+    desc: 'Alongamento com aplicação estratégica e acabamento discreto. Anilhas metálicas fixam as mechas fio a fio, sem cola e sem calor, preservando os fios naturais com resultado sofisticado.',
     advantages: [
       'Sem cola ou calor nos cabelos',
       'Resultado natural e indetectável',
@@ -35,7 +35,7 @@ const techniques = [
     slogan: 'Rápida. Leve. Confortável.',
     duration: '1 a 2h',
     durability: '1 a 2 meses',
-    desc: 'A fita adesiva é a técnica mais rápida e confortável do mega hair. Utiliza adesivo de alta qualidade para fixar as mechas em sanduíche, proporcionando volume e comprimento com leveza.',
+    desc: 'Técnica versátil que oferece rapidez na aplicação, conforto no dia a dia e excelente adaptação ao visual natural. Ideal para quem busca praticidade sem abrir mão do resultado.',
     advantages: [
       'Aplicação rápida e sem dor',
       'Confortável no dia a dia',
@@ -57,7 +57,7 @@ const techniques = [
     slogan: 'Clássica. Forte. Impactante.',
     duration: '1 a 4h',
     durability: '2 a 3 meses',
-    desc: 'O Ponto Americano é a técnica mais clássica e durável do mega hair. Usa queratina ou cola especial para fixar mechas que oferecem grande volume e comprimento com excelente fixação.',
+    desc: 'Método clássico pensado para proporcionar firmeza, segurança e um resultado bonito com boa distribuição dos fios. Indicado para quem busca volume, comprimento e durabilidade.',
     advantages: [
       'Maior durabilidade entre as técnicas',
       'Fixação extremamente forte',
@@ -103,8 +103,8 @@ export default function Tecnicas() {
             Técnicas Profissionais
           </h1>
           <p style={{ color: 'rgba(255,255,255,0.6)' }} className="text-lg max-w-xl mx-auto">
-            Dominamos as principais técnicas de mega hair para encontrar a ideal para o seu tipo de
-            cabelo, estilo e expectativa.
+            Cada atendimento começa com uma avaliação cuidadosa, passa pela escolha da técnica ideal
+            e segue com aplicação profissional, foco no acabamento e orientação para manutenção.
           </p>
         </div>
       </section>

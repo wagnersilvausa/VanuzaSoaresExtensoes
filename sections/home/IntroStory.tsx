@@ -39,19 +39,19 @@ export function IntroStory() {
 
             <div className="space-y-5 text-white/65 font-medium leading-relaxed text-base sm:text-lg">
               <p>
-                O que começou como uma forma de complementar a renda se tornou muito mais que um negócio.
-                Especializando-se em mega hair, Vanuza encontrou um propósito real: transformar vidas
-                através da autoestima.
+                Uma trajetória construída com dedicação, técnica e amor pelo que faz. Ao longo de 9 anos,
+                Vanuza Soares transformou o mega hair em muito mais que um serviço: em uma experiência de
+                cuidado, confiança e valorização da beleza de cada cliente.
               </p>
               <p>
-                São 9 anos de dedicação, esforço constante e perseverança, atravessando mudanças de espaço,
-                desafios, pandemia, sempre com a mesma entrega de qualidade para cada cliente.
+                Cada etapa trouxe aprendizado, evolução técnica e mais conexão com mulheres que buscavam
+                não apenas alongar os fios, mas recuperar presença, confiança e autoestima.
               </p>
               <p>
                 Hoje, com mais de{' '}
-                <span className="text-white font-bold">11 mil seguidoras</span> e{' '}
-                <span className="text-white font-bold">5 mil clientes atendidas</span>, a marca é
-                sinônimo de confiança e especialização em mega hair.
+                <span className="text-white font-bold">11 mil seguidoras</span>, a marca representa
+                experiência, cuidado e transformação real — com um atendimento que une técnica,
+                sensibilidade e resultado natural.
               </p>
             </div>
 
