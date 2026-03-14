@@ -92,7 +92,7 @@ export function TechniquesPreview() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {techniques.map((t, i) => (
+          {techniques.map((t) => (
             <div
               key={t.num}
               className="group relative rounded-2xl p-8 overflow-hidden transition-all duration-300 hover:-translate-y-1"
