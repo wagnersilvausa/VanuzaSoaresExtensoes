@@ -78,7 +78,7 @@ export default function Tecnicas() {
 
       {/* Hero */}
       <section
-        className="relative min-h-[60vh] flex items-end pb-16 overflow-hidden"
+        className="relative min-h-[50vh] sm:min-h-[60vh] flex items-end pb-12 sm:pb-16 overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #1a0f14 0%, #2a1a20 100%)' }}
       >
         <div
