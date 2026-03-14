@@ -18,8 +18,8 @@ const config: Config = {
           charcoal:   '#2a1a20',
           rose:       '#e8c4cb',
           blush:      '#f5e8eb',
-          gold:       '#c9a961',
-          'gold-light':'#e4cc94',
+          gold:       '#CFA07A',
+          'gold-light':'#E5C4A1',
           cream:      '#fdf8f2',
           light:      '#f8f3f5',
         },
@@ -32,7 +32,7 @@ const config: Config = {
       backgroundImage: {
         'gradient-brand':    'linear-gradient(135deg, #5a2e3e 0%, #98495C 50%, #B37E85 100%)',
         'gradient-dark':     'linear-gradient(135deg, #1a0f14 0%, #2a1a20 100%)',
-        'gradient-gold':     'linear-gradient(135deg, #c9a961 0%, #e4cc94 50%, #c9a961 100%)',
+        'gradient-gold':     'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)',
         'gradient-rose':     'linear-gradient(135deg, #98495C 0%, #B37E85 100%)',
         'gradient-hero':     'linear-gradient(105deg, rgba(26,15,20,0.97) 0%, rgba(26,15,20,0.85) 50%, rgba(26,15,20,0.3) 100%)',
         'gradient-section':  'linear-gradient(180deg, #1a0f14 0%, #2a1a20 100%)',
@@ -41,7 +41,7 @@ const config: Config = {
       boxShadow: {
         'brand':     '0 4px 30px rgba(152,73,92,0.25)',
         'brand-lg':  '0 8px 50px rgba(152,73,92,0.35)',
-        'gold':      '0 4px 20px rgba(201,169,97,0.3)',
+        'gold':      '0 4px 20px rgba(207,160,122,0.3)',
         'card':      '0 2px 20px rgba(26,15,20,0.08)',
         'card-hover':'0 8px 40px rgba(26,15,20,0.16)',
         'inner-brand': 'inset 0 1px 0 rgba(255,255,255,0.08)',

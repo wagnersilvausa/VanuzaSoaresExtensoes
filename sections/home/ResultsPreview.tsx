@@ -15,7 +15,7 @@ const images = [
 export function ResultsPreview() {
   return (
     <section
-      className="py-24 sm:py-32 relative overflow-hidden"
+      className="py-12 sm:py-16 relative overflow-hidden"
       style={{
         background: 'linear-gradient(180deg, #1a0f14 0%, #2a1a20 100%)',
       }}
@@ -32,7 +32,7 @@ export function ResultsPreview() {
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
 
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-8" style={{ background: 'var(--gold)' }} />
             <p
@@ -87,11 +87,11 @@ export function ResultsPreview() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-14 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="text-center mt-8 flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/resultados"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm text-white transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94, #c9a961)' }}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm text-white transition-all hover:scale-[1.03]"
+            style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
           >
             Ver Galeria Completa
           </Link>

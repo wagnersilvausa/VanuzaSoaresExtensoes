@@ -148,7 +148,7 @@ export function Footer() {
                 </svg>
                 <span className="text-xs text-white/45 group-hover:text-white/70 transition-colors leading-relaxed">
                   Av. José Faria da Rocha, 2122<br />
-                  Eldorado, Contagem - MG
+                  Eldorado, Contagem, MG
                 </span>
               </a>
 
@@ -176,8 +176,8 @@ export function Footer() {
                 href={siteConfig.brand.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-white transition-all hover:scale-105 mt-1"
-                style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94, #c9a961)', color: '#1a0f14' }}
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-white transition-all hover:scale-[1.03] mt-1"
+                style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
               >
                 Falar pelo WhatsApp
               </a>

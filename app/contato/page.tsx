@@ -14,7 +14,7 @@ export default function Contato() {
 
       {/* Hero */}
       <section
-        className="relative py-24 sm:py-32 overflow-hidden"
+        className="relative py-12 sm:py-16 overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #1a0f14 0%, #2a1a20 100%)' }}
       >
         <div
@@ -111,8 +111,8 @@ export default function Contato() {
                 href={siteConfig.brand.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-sm transition-all hover:scale-105"
-                style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-sm text-white transition-all hover:scale-[1.03]"
+                style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
               >
                 Chamar no WhatsApp
               </a>
@@ -175,7 +175,7 @@ export default function Contato() {
               <h3 className="text-white font-extrabold text-base mb-2">Localização</h3>
               <p className="text-sm leading-relaxed mb-4" style={{ color: 'rgba(255,255,255,0.5)' }}>
                 Av. José Faria da Rocha, 2122<br />
-                Eldorado, Contagem - MG<br />
+                Eldorado, Contagem, MG<br />
                 CEP 32315-040
               </p>
 
@@ -275,8 +275,8 @@ export default function Contato() {
             href={siteConfig.brand.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm text-white transition-all hover:scale-[1.03]"
+            style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
           >
             Enviar mensagem no WhatsApp
           </a>

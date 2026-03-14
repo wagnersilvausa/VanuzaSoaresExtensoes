@@ -31,10 +31,11 @@ const courses = [
   {
     badge: 'Formação Completa',
     name: 'Curso Completo',
-    hours: '20h',
-    desc: 'Todas as técnicas, atendimento, gestão e marketing para abrir seu negócio com confiança.',
-    highlights: ['Todas as técnicas', 'Mentoria inclusa', 'Certificado premium'],
+    hours: '14h',
+    desc: 'Formação completa em mega hair com as principais técnicas do mercado para você iniciar e crescer no seu próprio negócio.',
+    highlights: ['Microlink completo', 'Fita adesiva completa', 'Ponto americano', 'Fornecedores e materiais'],
     featured: true,
+    viewMoreLink: '/cursos',
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.5} className="w-6 h-6">
         <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
@@ -46,7 +47,7 @@ const courses = [
 export function CoursesPreview() {
   return (
     <section
-      className="py-24 sm:py-32 relative overflow-hidden"
+      className="py-12 sm:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #2a1a20 0%, #1a0f14 100%)' }}
     >
       {/* Glow */}
@@ -66,7 +67,7 @@ export function CoursesPreview() {
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
 
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="h-px w-8" style={{ background: 'var(--gold)' }} />
@@ -120,8 +121,8 @@ export function CoursesPreview() {
               {/* Featured tag */}
               {c.featured && (
                 <div
-                  className="absolute top-0 right-6 px-3 py-1 rounded-b-lg text-[10px] font-extrabold uppercase tracking-widest"
-                  style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
+                  className="absolute top-0 right-6 px-3 py-1 rounded-b-lg text-[10px] font-extrabold uppercase tracking-widest text-white"
+                  style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
                 >
                   Mais completo
                 </div>
@@ -185,19 +186,31 @@ export function CoursesPreview() {
               </ul>
 
               {/* CTA */}
-              <a
-                href={siteConfig.brand.whatsapp}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center py-3.5 rounded-xl text-sm font-bold transition-all hover:scale-105"
-                style={
-                  c.featured
-                    ? { background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }
-                    : { background: 'rgba(255,255,255,0.07)', color: '#fff', border: '1px solid rgba(255,255,255,0.12)' }
-                }
-              >
-                Saber Mais
-              </a>
+              <div className="space-y-3">
+                <a
+                  href={siteConfig.brand.whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block text-center py-3.5 rounded-xl text-sm font-bold text-white transition-all hover:scale-[1.03]"
+                  style={
+                    c.featured
+                      ? { background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }
+                      : { background: 'rgba(255,255,255,0.07)', color: '#fff', border: '1px solid rgba(255,255,255,0.12)' }
+                  }
+                >
+                  Saber Mais
+                </a>
+
+                {c.featured && (
+                  <Link
+                    href={c.viewMoreLink || '/'}
+                    className="block text-center py-2.5 rounded-lg text-xs font-bold text-white border transition-all hover:bg-white/5"
+                    style={{ borderColor: 'rgba(207,160,122,0.3)' }}
+                  >
+                    Ver mais detalhes →
+                  </Link>
+                )}
+              </div>
 
               {/* Bottom accent */}
               <div
@@ -209,11 +222,11 @@ export function CoursesPreview() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-14">
+        <div className="text-center mt-8">
           <Link
             href="/cursos"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm text-white transition-all hover:scale-[1.03]"
+            style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
           >
             Explorar Todos os Cursos
           </Link>

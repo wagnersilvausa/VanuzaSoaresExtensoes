@@ -48,15 +48,6 @@ export function Header() {
               {page.name}
             </Link>
           ))}
-          <a
-            href={siteConfig.brand.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 px-5 py-2.5 text-sm font-bold rounded-full text-white transition-all hover:scale-105 hover:shadow-gold"
-            style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94, #c9a961)' }}
-          >
-            Agendar
-          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -94,15 +85,6 @@ export function Header() {
               {page.name}
             </Link>
           ))}
-          <a
-            href={siteConfig.brand.whatsapp}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 block text-center px-6 py-3 text-sm font-bold rounded-full text-white"
-            style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94, #c9a961)' }}
-          >
-            Agendar pelo WhatsApp
-          </a>
         </div>
       )}
     </header>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { siteConfig, metadata as siteMetadata } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -18,9 +19,25 @@ const courses = [
   {
     badge: 'Formação',
     name: 'Curso Completo',
-    hours: '20h',
-    desc: 'Especialização em todas as técnicas de mega hair, atendimento ao cliente e ferramentas para montar seu próprio negócio.',
-    modules: ['Microlink completo', 'Fita Adesiva completo', 'Ponto Americano completo', 'Atendimento & vendas', 'Gestão de clientes', 'Empreendedorismo na beleza'],
+    hours: '14h',
+    desc: 'Especialização completa em mega hair para quem quer aprender as principais técnicas do mercado e iniciar seu próprio negócio.',
+    modules: [
+      'Microlink (aplicação, selagem e remoção)',
+      'Fita adesiva (aplicação, limpeza e manutenção)',
+      'Ponto americano com base de microlink',
+      'Tipos de cabelo e divisão correta dos fios',
+      'Lista de fornecedores e materiais',
+    ],
+    bonus: [
+      'Acabamento com queratina',
+      'Técnica nanolink',
+    ],
+    structure: [
+      'Curso 100% prático',
+      '2 dias intensivos',
+      'Prática em cabeça de treino',
+      'Certificado',
+    ],
     featured: true,
   },
   {
@@ -155,7 +172,7 @@ export default function Cursos() {
                   {c.desc}
                 </p>
 
-                <ul className="space-y-2 mb-8">
+                <ul className="space-y-2 mb-6">
                   {c.modules.map((m) => (
                     <li
                       key={m}
@@ -171,18 +188,64 @@ export default function Cursos() {
                   ))}
                 </ul>
 
+                {c.featured && c.bonus && (
+                  <div className="mb-6 pb-6" style={{ borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+                    <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: 'var(--gold)' }}>🎁 Bônus:</p>
+                    <ul className="space-y-2">
+                      {c.bonus.map((b) => (
+                        <li
+                          key={b}
+                          className="flex items-center gap-2 text-xs font-medium"
+                          style={{ color: 'rgba(255,255,255,0.75)' }}
+                        >
+                          <span style={{ color: 'var(--gold)' }}>•</span>
+                          {b}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {c.featured && c.structure && (
+                  <div className="mb-8">
+                    <ul className="space-y-2">
+                      {c.structure.map((s) => (
+                        <li
+                          key={s}
+                          className="flex items-center gap-2 text-xs font-medium"
+                          style={{ color: 'rgba(255,255,255,0.75)' }}
+                        >
+                          <svg className="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            style={{ color: 'rgba(201,169,97,0.9)' }}>
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+                          </svg>
+                          {s}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {!c.featured && (
+                  <div className="mb-8" />
+                )}
+
                 <a
-                  href={siteConfig.brand.whatsapp}
+                  href={
+                    c.featured
+                      ? `${siteConfig.brand.whatsapp}?text=Olá! Gostaria de conhecer mais sobre o Curso Completo de Mega Hair. Qual é o investimento e as próximas datas disponíveis?`
+                      : siteConfig.brand.whatsapp
+                  }
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center py-3.5 rounded-xl text-sm font-bold transition-all hover:scale-105"
+                  className="block text-center py-3.5 rounded-xl text-sm font-bold text-white transition-all hover:scale-[1.03]"
                   style={
                     c.featured
-                      ? { background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }
+                      ? { background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }
                       : { background: 'rgba(201,169,97,0.12)', color: 'var(--gold)', border: '1px solid rgba(201,169,97,0.25)' }
                   }
                 >
-                  Solicitar informações
+                  {c.featured ? 'Falar no WhatsApp' : 'Solicitar informações'}
                 </a>
               </div>
             ))}
@@ -217,7 +280,6 @@ export default function Cursos() {
               { title: 'Renda Real', desc: 'Oportunidade concreta de gerar renda mensal significativa com uma profissão de alta demanda.' },
               { title: 'Suporte Contínuo', desc: 'Você não fica sozinha depois do curso. Nossa comunidade oferece suporte e troca de experiências.' },
               { title: 'Metodologia Prática', desc: 'Cada aula inclui demonstração ao vivo e prática supervisionada com feedback direto.' },
-              { title: 'Networking', desc: 'Conecte-se com outras profissionais da área e crie parcerias que impulsionam seu negócio.' },
             ].map((item, i) => (
               <div
                 key={i}
@@ -253,8 +315,8 @@ export default function Cursos() {
             href={siteConfig.brand.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm text-white transition-all hover:scale-[1.03]"
+            style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
           >
             Falar sobre cursos no WhatsApp
           </a>

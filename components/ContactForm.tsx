@@ -99,8 +99,8 @@ export function ContactForm() {
 
       <button
         type="submit"
-        className="w-full py-4 rounded-xl font-bold text-sm transition-all hover:scale-[1.02] hover:shadow-lg"
-        style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
+        className="w-full py-4 rounded-xl font-bold text-sm text-white transition-all hover:scale-[1.03]"
+        style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
       >
         Enviar pelo WhatsApp
       </button>

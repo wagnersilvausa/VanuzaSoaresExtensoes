@@ -52,7 +52,7 @@ const techniques = [
 export function TechniquesPreview() {
   return (
     <section
-      className="py-24 sm:py-32 relative overflow-hidden"
+      className="py-12 sm:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #1a0f14 0%, #2a1a20 100%)' }}
     >
       {/* Glow */}
@@ -66,7 +66,7 @@ export function TechniquesPreview() {
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
 
         {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="h-px w-8" style={{ background: 'var(--gold)' }} />
@@ -158,11 +158,11 @@ export function TechniquesPreview() {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-14">
+        <div className="text-center mt-8">
           <Link
             href="/tecnicas"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm text-white transition-all hover:scale-[1.03]"
+            style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
           >
             Conhecer Todas as Técnicas
           </Link>

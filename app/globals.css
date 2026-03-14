@@ -26,8 +26,8 @@
   --tertiary:      #715B4B;
   --dark:          #1a0f14;
   --charcoal:      #2a1a20;
-  --gold:          #c9a961;
-  --gold-light:    #e4cc94;
+  --gold:          #CFA07A;
+  --gold-light:    #E5C4A1;
   --cream:         #fdf8f2;
   --light:         #f8f3f5;
   --blush:         #f5e8eb;
@@ -74,7 +74,7 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ─── Text Gradient ─────────────────────────────────────────────── */
 .text-gradient-gold {
-  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  background: linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

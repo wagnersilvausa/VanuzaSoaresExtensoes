@@ -17,7 +17,7 @@ const items = [
       </svg>
     ),
     title: 'Acabamento Natural',
-    desc: 'O objetivo é unir beleza, conforto e um resultado harmonioso — fios que parecem parte do seu cabelo.',
+    desc: 'O objetivo é unir beleza, conforto e um resultado harmonioso, fios que parecem parte do seu cabelo.',
   },
   {
     icon: (
@@ -60,13 +60,13 @@ const items = [
 export function Differentials() {
   return (
     <section
-      className="py-24 sm:py-32 relative overflow-hidden"
+      className="py-12 sm:py-16 relative overflow-hidden"
       style={{ background: 'linear-gradient(180deg, #1a0f14 0%, #2a1a20 100%)' }}
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
 
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
             <div className="h-px w-8" style={{ background: 'var(--gold)' }} />
             <p className="text-xs font-bold uppercase tracking-[0.2em]" style={{ color: 'var(--gold)' }}>

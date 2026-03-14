@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export function IntroStory() {
   return (
-    <section className="bg-brand-dark text-white py-24 sm:py-32 relative overflow-hidden">
+    <section className="bg-brand-dark text-white py-12 sm:py-16 relative overflow-hidden">
 
       {/* Subtle brand texture */}
       <div
@@ -50,7 +50,7 @@ export function IntroStory() {
               <p>
                 Hoje, com mais de{' '}
                 <span className="text-white font-bold">11 mil seguidoras</span>, a marca representa
-                experiência, cuidado e transformação real — com um atendimento que une técnica,
+                experiência, cuidado e transformação real, com um atendimento que une técnica,
                 sensibilidade e resultado natural.
               </p>
             </div>

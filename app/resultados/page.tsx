@@ -24,7 +24,7 @@ export default function Resultados() {
 
       {/* Hero */}
       <section
-        className="relative py-24 sm:py-32 overflow-hidden"
+        className="relative py-12 sm:py-16 overflow-hidden"
         style={{ background: 'linear-gradient(135deg, #1a0f14 0%, #2a1a20 100%)' }}
       >
         <div
@@ -200,8 +200,8 @@ export default function Resultados() {
             href={siteConfig.brand.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm transition-all hover:scale-105 hover:shadow-lg"
-            style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm text-white transition-all hover:scale-[1.03]"
+            style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
           >
             Agendar pelo WhatsApp
           </a>

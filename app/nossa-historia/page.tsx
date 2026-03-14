@@ -12,7 +12,7 @@ const timeline = [
   { year: '2019', title: 'Consolidação', desc: 'A clientela cresce, os resultados falam por si. A marca começa a ganhar identidade própria.' },
   { year: '2020', title: 'Superação', desc: 'A pandemia trouxe desafios. Mas a constância e a fé mantiveram o negócio e o propósito de pé.' },
   { year: '2021/22', title: 'Renascimento', desc: 'De volta ao ritmo pleno. Novos clientes, novas técnicas, crescimento orgânico nas redes sociais.' },
-  { year: '2024-25', title: 'Expansão', desc: 'Novas turmas de cursos, mais clientes atendidas e reconhecimento crescente da marca nas redes sociais.' },
+  { year: '2024/25', title: 'Expansão', desc: 'Novas turmas de cursos, mais clientes atendidas e reconhecimento crescente da marca nas redes sociais.' },
   { year: '2026', title: 'Hoje', desc: '9 anos, 11 mil seguidoras, diversas clientes transformadas. Uma marca sólida com história real.' },
 ];
 
@@ -76,7 +76,7 @@ export default function NossaHistoria() {
                   mulheres que buscavam não apenas alongar os fios, mas recuperar confiança, presença e autoestima.
                 </p>
                 <p>
-                  Hoje, a marca representa experiência, cuidado e transformação real — com um atendimento
+                  Hoje, a marca representa experiência, cuidado e transformação real, com um atendimento
                   que une técnica, sensibilidade e resultado natural.
                 </p>
               </div>
@@ -227,8 +227,8 @@ export default function NossaHistoria() {
             href={siteConfig.brand.whatsapp}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm transition-all hover:scale-105"
-            style={{ background: 'linear-gradient(135deg, #c9a961, #e4cc94)', color: '#1a0f14' }}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full font-bold text-sm text-white transition-all hover:scale-[1.03]"
+            style={{ background: 'linear-gradient(135deg, #715B4B 0%, #CFA07A 50%, #E5C4A1 100%)' }}
           >
             Agendar pelo WhatsApp
           </a>
